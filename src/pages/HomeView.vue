@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import HabibImage from '../assets/HabibHossain.png';
 
 const featuredProjects = [
   { id: 1, title: 'Hero IO', desc: 'A comprehensive React-based app store with live search and local storage.', tag: 'React' },
@@ -29,7 +30,7 @@ const services = [
             digital products.
           </h1>
           <p class="text-lg opacity-70 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-            Hi, I'm <span class="font-bold text-base-content">Habib</span>. A Junior Full-Stack Developer 
+            Hi, I'm <span class="font-bold text-base-content">Habib Hossain</span>. A Junior Full-Stack Developer 
             specializing in <span class="text-primary font-bold">MERN</span> & <span class="text-primary font-bold">Laravel</span>.
           </p>
           <div class="flex flex-wrap justify-center lg:justify-start gap-4">
@@ -38,8 +39,8 @@ const services = [
           </div>
         </div>
         <div class="relative flex justify-center lg:justify-end">
-          <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[380px] lg:h-[380px]">
-            <img src="https://via.placeholder.com/500x500/282a36/bd93f9?text=Habib+Photo" class="rounded-3xl w-full h-full object-cover shadow-2xl border-4 border-base-200 transform lg:rotate-3 hover:rotate-0 transition-all duration-500" />
+          <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-95 lg:h-95">
+            <img :src="HabibImage" class="rounded-3xl w-full h-full object-cover shadow-2xl border-4 border-base-200 transform lg:rotate-3 hover:rotate-0 transition-all duration-500" />
             <div class="absolute -z-10 -top-4 -right-4 w-full h-full border-2 border-primary/30 rounded-3xl"></div>
           </div>
         </div>
@@ -90,7 +91,7 @@ const services = [
           <RouterLink to="/projects" class="btn btn-sm btn-outline rounded-full px-6 font-bold uppercase tracking-wider text-[10px]">View All Projects</RouterLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div v-for="project in featuredProjects" :key="project.id" class="group bg-base-100 border border-base-300 p-8 rounded-[2rem] hover:shadow-xl transition-all duration-500">
+          <div v-for="project in featuredProjects" :key="project.id" class="group bg-base-100 border border-base-300 p-8 rounded-4xl hover:shadow-xl transition-all duration-500">
             <div class="badge badge-primary font-black text-[9px] uppercase tracking-widest mb-4">{{ project.tag }}</div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{{ project.title }}</h3>
             <p class="text-xs opacity-60 mb-8 leading-relaxed">{{ project.desc }}</p>

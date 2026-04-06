@@ -12,7 +12,6 @@ const isSubmitting = ref(false);
 
 const handleSubmit = () => {
   isSubmitting.value = true;
-  // এখানে আপনার API বা EmailJS লজিক বসাতে পারবেন
   setTimeout(() => {
     alert('Message sent successfully!');
     isSubmitting.value = false;
@@ -48,7 +47,7 @@ const handleSubmit = () => {
               </div>
               <div>
                 <p class="text-[10px] font-black uppercase opacity-40">Email Me</p>
-                <a href="mailto:your-email@example.com" class="text-lg font-bold hover:text-primary transition-colors">habib@developer.com</a>
+                <a href="mailto:habibfahim71@gmail.com" class="text-lg font-bold hover:text-primary transition-colors">habibfahim71@gmail.com</a>
               </div>
             </div>
 
@@ -58,7 +57,7 @@ const handleSubmit = () => {
               </div>
               <div>
                 <p class="text-[10px] font-black uppercase opacity-40">GitHub</p>
-                <a href="#" class="text-lg font-bold hover:text-primary transition-colors">github.com/habib-dev</a>
+                <a href="https://github.com/dev-habibhossain" target="_blank" class="text-lg font-bold hover:text-primary transition-colors">github.com/dev-habibhossain</a>
               </div>
             </div>
           </div>
@@ -74,7 +73,7 @@ const handleSubmit = () => {
         </div>
       </div>
 
-      <div class="bg-base-200/50 border border-base-300 p-8 rounded-[2rem] shadow-xl">
+      <div class="bg-base-200/50 border border-base-300 p-8 rounded-4xl shadow-xl">
         <form @submit.prevent="handleSubmit" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">

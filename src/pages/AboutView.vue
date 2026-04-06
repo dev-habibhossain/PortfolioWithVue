@@ -1,5 +1,6 @@
 <script setup>
-// আপনার পার্সোনাল কিছু ডাটা যা সেকশনগুলোতে ব্যবহার হবে
+import HabibImage from '../assets/HabibHossain.png';
+
 const education = [
   { degree: 'PHP Laravel Specialist Course', institution: 'Ostad Platform', year: '2025 - Present' },
   { degree: 'MERN Stack Development', institution: 'Self-Taught / Online', year: '2024 - 2025' }
@@ -33,7 +34,7 @@ const values = [
       <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="relative group">
           <div class="aspect-square rounded-[3rem] overflow-hidden border-8 border-base-200 shadow-2xl relative">
-            <img src="https://via.placeholder.com/600x600/282a36/bd93f9?text=Habib+Profile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <img :src="HabibImage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             <div class="absolute inset-0 bg-primary/10"></div>
           </div>
           <div class="absolute -z-10 -bottom-6 -left-6 w-full h-full border-2 border-primary/20 rounded-[3rem]"></div>
@@ -55,9 +56,9 @@ const values = [
       <section class="py-20 border-y border-base-300">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div v-for="value in values" :key="value.title" class="space-y-4">
-             <div class="w-12 h-1 border-t-4 border-primary"></div>
-             <h3 class="text-2xl font-black tracking-tighter">{{ value.title }}</h3>
-             <p class="text-sm opacity-60 leading-relaxed">{{ value.desc }}</p>
+            <div class="w-12 h-1 border-t-4 border-primary"></div>
+            <h3 class="text-2xl font-black tracking-tighter">{{ value.title }}</h3>
+            <p class="text-sm opacity-60 leading-relaxed">{{ value.desc }}</p>
           </div>
         </div>
       </section>
@@ -66,7 +67,7 @@ const values = [
         <h2 class="text-4xl font-black tracking-tighter mb-12 italic underline decoration-primary underline-offset-8">Education & Training</h2>
         <div class="space-y-12">
           <div v-for="edu in education" :key="edu.degree" class="relative pl-8 border-l-2 border-primary/20">
-            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(189,147,249,0.5)]"></div>
+            <div class="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(189,147,249,0.5)]"></div>
             <p class="text-xs font-black text-primary uppercase tracking-widest mb-1">{{ edu.year }}</p>
             <h4 class="text-2xl font-bold tracking-tight">{{ edu.degree }}</h4>
             <p class="opacity-60 text-lg">{{ edu.institution }}</p>
@@ -82,10 +83,10 @@ const values = [
           </p>
         </div>
         <div class="flex flex-wrap gap-3 justify-center">
-           <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Photography</span>
-           <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Reading Tech</span>
-           <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">UI Design</span>
-           <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Linux Ricing</span>
+          <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Photography</span>
+          <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Reading Tech</span>
+          <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">UI Design</span>
+          <span class="px-6 py-3 bg-base-300 rounded-full text-xs font-black uppercase tracking-widest border border-base-100">Linux Ricing</span>
         </div>
       </section>
 
