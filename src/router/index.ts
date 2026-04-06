@@ -1,5 +1,6 @@
 import  AboutView  from '@/pages/AboutView.vue';
 import BlogView from '@/pages/BlogView.vue';
+import ContactView from '@/pages/ContactView.vue';
 import  HomeView  from '@/pages/HomeView.vue';
 import ProjectView from '@/pages/ProjectView.vue';
 import SkillView from '@/pages/SkillView.vue';
@@ -11,7 +12,8 @@ const routes = [
   { path: '/about', component: AboutView },
   {path:'/projects', component: ProjectView},
   {path: '/skills', component: SkillView},
-  {path: '/blogs', component: BlogView}
+  {path: '/blogs', component: BlogView},
+  {path: '/contact', component: ContactView}
 ]
 
 const router = createRouter({
