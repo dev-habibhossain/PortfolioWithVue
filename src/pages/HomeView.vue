@@ -104,7 +104,7 @@ const services = [
     <section class="py-28 text-center max-w-3xl mx-auto px-6">
       <h2 class="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">Let's build something <br/> <span class="text-primary italic">extraordinary</span>.</h2>
       <p class="text-lg opacity-60 mb-10 leading-relaxed">Currently looking for new opportunities and freelance projects. Let's talk about your idea.</p>
-      <a href="mailto:your@email.com" class="btn btn-primary btn-md md:btn-lg px-10 rounded-full shadow-lg shadow-primary/20">Get In Touch</a>
+      <a href="mailto:habibfahim71@gmail.com" class="btn btn-primary btn-md md:btn-lg px-10 rounded-full shadow-lg shadow-primary/20">Get In Touch</a>
     </section>
 
   </div>

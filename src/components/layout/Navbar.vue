@@ -50,7 +50,7 @@ const navLinks = [
     </div>
 
     <div class="navbar-end">
-      <a href="#contact" class="btn btn-primary btn-sm md:btn-md shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+      <a href="contact" class="btn btn-primary btn-sm md:btn-md shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
         Hire Me
       </a>
     </div>
